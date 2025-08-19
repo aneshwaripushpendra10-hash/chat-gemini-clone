@@ -123,7 +123,7 @@ function App() {
           </div>
         ) : null}
 
-        <div ref={scrollToAns} className="container h-190 overflow-auto">
+        <div ref={scrollToAns} className="container h-165 overflow-auto">
           <div>
             <ul>
               {/* {result.map((item, index) => (

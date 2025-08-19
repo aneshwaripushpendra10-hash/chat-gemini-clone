@@ -20,7 +20,7 @@ function RecentSearch({ recentHistory, setRecentHistory, setSelectedHistory }) {
         <h1 className="text-xl text-white p-2 flex justify-center text-center">
           <span>Recent Searches</span>
           <button
-            className="text-white ml-2 cursor-pointer"
+            className="rgba(255, 255, 255, 0.6) ml-2 cursor-pointer"
             onClick={clearHistory}
           >
             <svg
@@ -28,7 +28,7 @@ function RecentSearch({ recentHistory, setRecentHistory, setSelectedHistory }) {
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              fill="#1f1f1f"
+              fill="currentColor"
             >
               <path d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
             </svg>
@@ -43,7 +43,7 @@ function RecentSearch({ recentHistory, setRecentHistory, setSelectedHistory }) {
               >
                 <li
                   onClick={() => setSelectedHistory(item)}
-                  className="w-full p-1 pl-5 px-5 text-amber-50 cursor-pointer hover:bg-zinc-700 hover:text-amber-100 truncate"
+                  className="w-full p-1 pl-5 px-5 text-white/90 cursor-pointer hover:bg-zinc-700 hover:text-white truncate"
                 >
                   {item}
                 </li>
@@ -56,7 +56,7 @@ function RecentSearch({ recentHistory, setRecentHistory, setSelectedHistory }) {
                     height="24px"
                     viewBox="0 -960 960 960"
                     width="24px"
-                    fill="#1f1f1f"
+                    fill="currentColor"
                   >
                     <path d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z" />
                   </svg>
