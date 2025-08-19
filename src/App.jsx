@@ -87,12 +87,19 @@ function App() {
     askQuestion();
   }, [selectedHistory]);
 
+  const startNewChat = () => {
+    setResult([]);
+    setSelectedHistory("");
+    setQuestion("");
+  };
+
   return (
     <div className="grid grid-cols-5 h-screen">
       <RecentSearch
         recentHistory={recentHistory}
         setRecentHistory={setRecentHistory}
         setSelectedHistory={setSelectedHistory}
+        startNewChat={startNewChat}
       />
       {/* //body part */}
       <div className="col-span-4 p-10">
@@ -151,11 +158,7 @@ function App() {
                 </li>
               ))} */}
                 {result.map((item, index) => (
-                  <QuestionAnswer
-                    key={index + Math.random()}
-                    item={item}
-                    index={index}
-                  />
+                  <QuestionAnswer key={index} item={item} index={index} />
                 ))}
               </ul>
             </div>
